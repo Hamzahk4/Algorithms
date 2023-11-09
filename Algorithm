@@ -1,0 +1,7 @@
+public class Algorithm {
+    public int digits(int i){
+        String temp = " "+i;
+        int numDigits = temp.length() - 1;
+        return numDigits;
+    }
+}
