@@ -4,4 +4,8 @@ public class Algorithm {
         int numDigits = temp.length() - 1;
         return numDigits;
     }
+    public boolean divisible(int a, int b){
+        return ((a%b) == 0);
+        
+    }
 }
