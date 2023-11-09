@@ -4,5 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Algorithm Alg = new Algorithm();
         System.out.println(Alg.digits(23469236));
+        System.out.println(Alg.divisible(9, 4));
     }
 }
