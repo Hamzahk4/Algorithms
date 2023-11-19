@@ -24,16 +24,41 @@ public class Algorithm {
         return sum;
 
     }
-    public int sumOfAllInBetween(int num1, int num2){// 1,2
+    public int sumOfAllInBetween(int num1, int num2){
         int i  = 0;//3
         int sum = 0;
-        while (i <= num2){
+        while (i + num1 <= num2){
             if ((num1+i) % 2 != 0){
                 sum += (num1+i);
             }
             i++;
         }
-        return sum;//5+7
+        return sum;
+    }
+
+    public int multiplesOfTen(int num1, int num2){
+
+        int start;
+        int sum = 0;
+        if (num1 % 10 == 0) { //is num1 a multiple?
+            start = num1;
+        } else {
+            start = num1 + (10 - num1 % 10); // if not, it will be the closest multiple
+        }
+        while (start <= num2) {
+            sum += start;
+            start += 10;
+        }
+        return sum;
+    }
+
+    public int powerOfTwo(int num){ // had to figure out what the question was even asking to be done***
+        int i = 1;
+        while (i * 2 <= num) {
+            i *= 2;
+        }
+
+        return i;
     }
 
 }
