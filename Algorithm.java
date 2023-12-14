@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Algorithm {
     public int digits(int i){ //HOW MANY DIGITS
         String temp = " "+i;
@@ -85,4 +87,52 @@ public class Algorithm {
         }
         return strcount;
     }
+
+
+    //ARRAYYYSSSSSS
+    public void printArray(int[] array){
+      for (int i : array) {
+          System.out.println(i);
+        }
+    }
+
+    public int maxOfArray(int[] array){
+        int greatest = array[0];
+        for (int i : array){
+            if (i > greatest){ greatest = i;}
+        }
+        return greatest;
+    }
+
+    public int minOfArray(int[] array){
+        int least = array[0];
+        for (int i : array){
+            if (i < least){ least = i;}
+        }
+        return least;
+    }
+
+    public void swapArray(int[] array, int a, int b){
+        if (a > array.length-1 || b > array.length-1){
+            System.out.println("Double check your parameters.");
+        }
+        int indexb = array[b];
+        int indexa = array[a];
+        array[a] = array[b];
+    }
+    public String minOfStringArray(String[] array){
+        String least = array[0];
+        for (String i : array){
+            if (i.length() < least.length()){ least = i;}
+        }
+        return least;
+    }
+    public String maxOfStringArray(String[] array){
+        String greatest = array[0];
+        for (String i : array){
+            if (i.length() > greatest.length()){ greatest = i;}
+        }
+        return greatest;
+    }
+
 }

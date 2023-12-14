@@ -45,7 +45,29 @@ public class Main {
 //        System.out.println(Alg.numOccurances("Ratatatatatat", "at"));
 //        System.out.println(Alg.numOccurances("Mississippi", "si"));
 //        System.out.println(Alg.numOccurances("Messisimplybetter", "wheel"));
+//        System.out.println()
+
+        // ARRAYYYSSSSSSS
+//        Alg.printArray(new int[]{4, 2});
+//        Alg.printArray(new int[]{1,1,1,1,1,1,1,4});
+//        Alg.printArray(new int[]{6, 2,5});
 //        System.out.println();
+//        System.out.println(Alg.maxOfArray(new int[]{1,4,2}));
+//        System.out.println(Alg.maxOfArray(new int[]{1000000,443,2}));
+//        System.out.println(Alg.maxOfArray(new int[]{2,2,2,2,2,2,1562}));
+//        System.out.println();
+//        System.out.println(Alg.minOfArray(new int[]{91,4,2}));
+//        System.out.println(Alg.minOfArray(new int[]{1000000,443,89}));
+//        System.out.println(Alg.minOfArray(new int[]{2,1,2,2,2,2,1562}));
+//        System.out.println();
+//        System.out.println(Alg.minOfStringArray(new String[]{"Hello,", "world", "!"}));
+//        System.out.println(Alg.minOfStringArray(new String[]{"Messi","is","betterthanronaldo"}));
+//        System.out.println(Alg.minOfStringArray(new String[]{"Holmer","W","teacher"}));
+//        System.out.println();
+//        System.out.println(Alg.maxOfStringArray(new String[]{"Messi","is","the","GOAT"}));
+//        System.out.println(Alg.maxOfStringArray(new String[]{"Hello,", "world", "!"}));
+//        System.out.println(Alg.maxOfStringArray(new String[]{"Let","him","cook"}));
+
 
 
 
