@@ -135,4 +135,12 @@ public class Algorithm {
         return greatest;
     }
 
+    public double meanAvg(double[] array){
+        double sum = 0;
+        for (double i : array){
+            sum = sum + i;
+        }
+        return sum/array.length;
+    }
+
 }

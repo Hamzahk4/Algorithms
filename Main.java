@@ -67,6 +67,12 @@ public class Main {
 //        System.out.println(Alg.maxOfStringArray(new String[]{"Messi","is","the","GOAT"}));
 //        System.out.println(Alg.maxOfStringArray(new String[]{"Hello,", "world", "!"}));
 //        System.out.println(Alg.maxOfStringArray(new String[]{"Let","him","cook"}));
+//        System.out.println();
+//        System.out.println(Alg.meanAvg(new double[]{2.0,3.0,4.0,5.0}));
+//        System.out.println(Alg.meanAvg(new double[]{22.5,15.6,17.2}));
+//        System.out.println(Alg.meanAvg(new double[]{1.0,1.0,1.0,50.0}));
+//        System.out.println();
+
 
 
 
