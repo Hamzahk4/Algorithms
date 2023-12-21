@@ -47,31 +47,65 @@ public class Main {
 //        System.out.println(Alg.numOccurances("Messisimplybetter", "wheel"));
 //        System.out.println()
 
-        // ARRAYYYSSSSSSS
-//        Alg.printArray(new int[]{4, 2});
-//        Alg.printArray(new int[]{1,1,1,1,1,1,1,4});
-//        Alg.printArray(new int[]{6, 2,5});
-//        System.out.println();
-//        System.out.println(Alg.maxOfArray(new int[]{1,4,2}));
-//        System.out.println(Alg.maxOfArray(new int[]{1000000,443,2}));
-//        System.out.println(Alg.maxOfArray(new int[]{2,2,2,2,2,2,1562}));
-//        System.out.println();
-//        System.out.println(Alg.minOfArray(new int[]{91,4,2}));
-//        System.out.println(Alg.minOfArray(new int[]{1000000,443,89}));
-//        System.out.println(Alg.minOfArray(new int[]{2,1,2,2,2,2,1562}));
-//        System.out.println();
-//        System.out.println(Alg.minOfStringArray(new String[]{"Hello,", "world", "!"}));
-//        System.out.println(Alg.minOfStringArray(new String[]{"Messi","is","betterthanronaldo"}));
-//        System.out.println(Alg.minOfStringArray(new String[]{"Holmer","W","teacher"}));
-//        System.out.println();
-//        System.out.println(Alg.maxOfStringArray(new String[]{"Messi","is","the","GOAT"}));
-//        System.out.println(Alg.maxOfStringArray(new String[]{"Hello,", "world", "!"}));
-//        System.out.println(Alg.maxOfStringArray(new String[]{"Let","him","cook"}));
-//        System.out.println();
-//        System.out.println(Alg.meanAvg(new double[]{2.0,3.0,4.0,5.0}));
-//        System.out.println(Alg.meanAvg(new double[]{22.5,15.6,17.2}));
-//        System.out.println(Alg.meanAvg(new double[]{1.0,1.0,1.0,50.0}));
-//        System.out.println();
+        // ARRAYYYSSSSSSS *some of them print just to verify that it worked*
+        Alg.printArray(new int[]{1,2,3});
+        Alg.printArray(new int[]{1,1,1,1,1,1,1,4});
+        Alg.printArray(new int[]{6, 2,5});
+        System.out.println();
+        Alg.swapArray(new int[]{1,2,3,4},1,2);
+        Alg.swapArray(new int[]{1,2,3,4,5},2,1);
+        Alg.swapArray(new int[]{99,81,33},0,2); //prints to check if it worked*
+        System.out.println();
+        System.out.println(Alg.maxOfArray(new int[]{3,2,1}));
+        System.out.println(Alg.maxOfArray(new int[]{1000000,443,2}));
+        System.out.println(Alg.maxOfArray(new int[]{2,2,2,2,2,2,1562}));
+        System.out.println();
+        System.out.println(Alg.minOfArray(new int[]{3,2,1}));
+        System.out.println(Alg.minOfArray(new int[]{1000000,443,89}));
+        System.out.println(Alg.minOfArray(new int[]{2,1,2,2,2,2,1562}));
+        System.out.println();
+        System.out.println(Alg.minOfStringArray(new String[]{"Hello,", "world", "!"}));
+        System.out.println(Alg.minOfStringArray(new String[]{"Messi","is","betterthanronaldo"}));
+        System.out.println(Alg.minOfStringArray(new String[]{"Mr.Holmer","W","teacher"}));
+        System.out.println();
+        System.out.println(Alg.maxOfStringArray(new String[]{"Hello,", "world", "!"}));
+        System.out.println(Alg.maxOfStringArray(new String[]{"Messi","is","the","GOAT"}));
+        System.out.println(Alg.maxOfStringArray(new String[]{"Let","him","cook"}));
+        System.out.println();
+        System.out.println(Alg.meanAvg(new double[]{2.0,3.0,4.0,5.0}));
+        System.out.println(Alg.meanAvg(new double[]{22.5,15.6,17.2}));
+        System.out.println(Alg.meanAvg(new double[]{1.0,1.0,1.0,50.0}));
+        System.out.println();
+        System.out.println(Alg.firstNeg(new int[]{1,3,-1,7,-3,2,4}));
+        System.out.println(Alg.firstNeg(new int[]{1,0,-1}));
+        System.out.println(Alg.firstNeg(new int[]{4,15,-122}));
+        System.out.println();
+        System.out.println(Alg.largestDif(new int[]{2,3,4},new int[]{-1,-2,-3}));
+        System.out.println(Alg.largestDif(new int[]{1,1,1},new int[]{-2,-6,-9}));
+        System.out.println(Alg.largestDif(new int[]{15,1,19919},new int[]{-2,-6,-9}));
+        System.out.println();
+        Alg.reverseArray(new int[]{1,2,3}); // prints to check if the change worked*
+        Alg.reverseArray(new int[]{4,2,3,1});
+        Alg.reverseArray(new int[]{99,88,77});
+        System.out.println();
+        System.out.println(Alg.twoConsecutiveVals(new int[]{1,2,3,3,4}));
+        System.out.println(Alg.twoConsecutiveVals(new int[]{3,3,3,3,3}));
+        System.out.println(Alg.twoConsecutiveVals(new int[]{5,4,3,2,1}));
+        System.out.println();
+        System.out.println(Alg.equivalantVals(new int[]{1,2,3,2}));
+        System.out.println(Alg.equivalantVals(new int[]{4,5,6}));
+        System.out.println(Alg.equivalantVals(new int[]{1,2,6,8,99999,4,5,99999}));
+        System.out.println();
+        System.out.println(Alg.longestStreak(new int[]{1,2,1,1,1},1));
+        System.out.println(Alg.longestStreak(new int[]{1,1,1,1,1,1,1,1},4));
+        System.out.println(Alg.longestStreak(new int[]{1,2,3,4,5},5));
+        System.out.println();
+        System.out.println(Alg.alphabeticallyLast(new String[]{"zebra","alpha"}));
+        System.out.println(Alg.alphabeticallyLast(new String[]{"Hamzah","Messi"}));
+        System.out.println(Alg.alphabeticallyLast(new String[]{"Trump","Biden"}));
+
+
+
 
 
 
