@@ -13,7 +13,7 @@ public class Main {
 //        System.out.println();
 //        System.out.println(Alg.sumOfAllDigits(999));
 //        System.out.println(Alg.sumOfAllDigits(102837));
-//        System.out.println(Alg.sumOfAllDigits(1245));
+//        System.out.println(Alg.sumOfAllDigits(12995));
 //        System.out.println();
 //        System.out.println(Alg.sumOfAllInBetween(1,3));
 //        System.out.println(Alg.sumOfAllInBetween(3,7));
