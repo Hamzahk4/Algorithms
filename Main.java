@@ -2,50 +2,43 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
+    //
+    public static void printArrListOfInts(ArrayList<Integer> arr){
+        for (Integer s : arr) {
+            System.out.println(s);
+        }
+    }
+    public static void printArrList(ArrayList<String> arr){
+        for (String s : arr) {
+            System.out.println(s);
+        }
+    }
+    public static void printArr(String[] arr){
+    for(int i=0; i<arr.length; i++){
+        System.out.println(arr[i]);
+    }
+    }
     public static void main(String[] args) {
-        System.out.println(Algies.dupes(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3))));
-        System.out.println(Algies.dupes(new ArrayList<Integer>(Arrays.asList(1,2,2,2,2,2))));
-        System.out.println(Algies.dupes(new ArrayList<Integer>(Arrays.asList(3,4,6,12,2,2,4,4))));
-        System.out.println(Algies.remove(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3)), 2));
-        System.out.println(Algies.remove(new ArrayList<Integer>(Arrays.asList(2,2,2,22,2,2222,22,2,2)), 2));
-        System.out.println(Algies.remove(new ArrayList<Integer>(Arrays.asList(2,2,3,3)), 1));
-        System.out.println(Algies.addInt(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3)), 4));
-        System.out.println(Algies.addInt(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3)), 4));
-        System.out.println(Algies.addInt(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3)), 1));
-        System.out.println(Algies.addInt(new ArrayList<Integer>(Arrays.asList(1,2,3,4,6,7,8)), 5));
-        System.out.println(Algies.reverse(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3)), new ArrayList<Integer>(Arrays.asList(3,3,2,2,1))));
-        System.out.println(Algies.reverse(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3)), new ArrayList<Integer>(Arrays.asList(3,3,2,2,1))));
-        System.out.println(Algies.reverse(new ArrayList<Integer>(Arrays.asList(1,2,3)), new ArrayList<Integer>(Arrays.asList(3,2,1))));
-        System.out.println(Algies.reverse(new ArrayList<Integer>(Arrays.asList(1,2,3,4)), new ArrayList<Integer>(Arrays.asList(4,3,2,0))));
-        System.out.println(Algies.max(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3))));
-        System.out.println(Algies.max(new ArrayList<Integer>(Arrays.asList(3,2,1))));
-        System.out.println(Algies.max(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3,4,2,85,2,85,893,8))));
-        System.out.println(Algies.min(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3))));
-        System.out.println(Algies.min(new ArrayList<Integer>(Arrays.asList(3,2,1))));
-        System.out.println(Algies.min(new ArrayList<Integer>(Arrays.asList(2,2,3,3,4,-2,85,2,-85,893,8))));
-        System.out.println(Algies.tinyWord(new ArrayList<String>(Arrays.asList("Hello,", "world", "!"))));
-        System.out.println(Algies.tinyWord(new ArrayList<String>(Arrays.asList("Hello,", "world 7", "   !   "))));
-        System.out.println(Algies.tinyWord(new ArrayList<String>(Arrays.asList("Hello,", "worfld", "!", ",,,d7g,,", "347hd"))));
-        System.out.println(Algies.bigWord(new ArrayList<String>(Arrays.asList("Hello,", "world", "!"))));
-        System.out.println(Algies.bigWord(new ArrayList<String>(Arrays.asList("Hello,", "wrld 7", "   !   "))));
-        System.out.println(Algies.bigWord(new ArrayList<String>(Arrays.asList("Messi", "is", "goated"))));
-        System.out.println(Algies.bigDif(new ArrayList<Integer>(Arrays.asList(2,3,4)), new ArrayList<Integer>(Arrays.asList(-1,-2,-3))));
-        System.out.println(Algies.bigDif(new ArrayList<Integer>(Arrays.asList(1,2,2,3,3)), new ArrayList<Integer>(Arrays.asList(3,3,2,2,1))));
-        System.out.println(Algies.bigDif(new ArrayList<Integer>(Arrays.asList(-4,22,3,3)), new ArrayList<Integer>(Arrays.asList(3,12,8,1))));
-        System.out.println(Algies.unkind(new ArrayList<Double>(Arrays.asList(1.5, 3.5, 5.5))));
-        System.out.println(Algies.unkind(new ArrayList<Double>(Arrays.asList(1.5, 3.5, 5.5,5.0,6.2))));
-        System.out.println(Algies.unkind(new ArrayList<Double>(Arrays.asList(1.0,2.0,3.0,4.0,5.0))));
-        System.out.println(Algies.spinItRound(new ArrayList<Integer>(Arrays.asList(1,2,3))));
-        System.out.println(Algies.spinItRound(new ArrayList<Integer>(Arrays.asList(3,2,1))));
-        System.out.println(Algies.spinItRound(new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,10))));
-        System.out.println(Algies.consec(new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,10))));
-        System.out.println(Algies.consec(new ArrayList<Integer>(Arrays.asList(1, 2, 3, 3, 4))));
-        System.out.println(Algies.consec(new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,5,6,7,8,9,10))));
-        System.out.println(Algies.equal(new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,4,10))));
-        System.out.println(Algies.equal(new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,10))));
-        System.out.println(Algies.equal(new ArrayList<Integer>(Arrays.asList(1,2,3,2))));
-        System.out.println(Algies.negNelly(new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,5,6,-7,8,9,10))));
-        System.out.println(Algies.negNelly(new ArrayList<Integer>(Arrays.asList(1,0,-1))));
-        System.out.println(Algies.negNelly(new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,5,6,7,8,9,10))));
+        Algies a = new Algies();
+//      --------------------------------------------------------------------------------
+        // List With Insertion Sort
+        String[] str1 = {"z","b","a"}; String[] s1 = a.insertionSort(str1);
+        String[] str2 = {"Zebra","alpha"}; String[] s2 = a.insertionSort(str2);
+        String[] str3 = {"cat","rat","mat", "jholmer"}; String[] s3 = a.insertionSort(str3);
+        printArr(s1); printArr(s2); printArr(s3);
 
-    }}
+//      // ArrayList with insertion sort
+        ArrayList<String> aL1 = new ArrayList<String>(Arrays.asList("Zebra","alpha")); aL1 = a.insertionSortButForAL(aL1);
+        ArrayList<String> aL2 = new ArrayList<String>(Arrays.asList("Zebra","alpha","map","jholmer epic")); aL2 = a.insertionSortButForAL(aL2);
+        ArrayList<String> aL3 = new ArrayList<String>(Arrays.asList("seeds","capes","urchin?")); aL3 = a.insertionSortButForAL(aL3);
+        printArrList(aL1); printArrList(aL2); printArrList(aL3);
+
+        // ArrayList of INTS with insertion sort
+        ArrayList<Integer> i1 = new ArrayList<Integer>(Arrays.asList(1,0,-1)); i1 = a.insertionSortButForInts(i1);
+        ArrayList<Integer> i2 = new ArrayList<Integer>(Arrays.asList(1,1,1,1,9090,-1*4)); i2 = a.insertionSortButForInts(i2);
+        ArrayList<Integer> i3 = new ArrayList<Integer>(Arrays.asList(0,45,67,-4,-90)); i3 = a.insertionSortButForInts(i3);
+        printArrListOfInts(i1); printArrListOfInts(i2); printArrListOfInts(i3);
+//      --------------------------------------------------------------------------------
+
+    }
+}
